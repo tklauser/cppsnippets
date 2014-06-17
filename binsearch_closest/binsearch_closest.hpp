@@ -58,7 +58,7 @@ ssize_t binsearch_closest(const std::vector<T> vec, T val)
 	if (imax - imin == 1 && std::abs(vec.at(imax) - val) < std::abs(vec.at(imin) - val))
 		imin = imax;
 
-	return (ssize_t)imin;
+	return static_cast<ssize_t>(imin);
 }
 
 #endif /* __BINSEARCH_CLOSEST_HPP__ */
