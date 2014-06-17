@@ -45,7 +45,7 @@ ssize_t binsearch_closest(const std::vector<T> vec, T val)
 		return vec.size() - 1;
 
 	size_t imin = 0;
-	size_t  imax = vec.size() - 1;
+	size_t imax = vec.size() - 1;
 	while (imax - imin > 1) {
 		// determine midpoint, prevent integer overflow
 		size_t imid = imin + ((imax - imin) / 2);
